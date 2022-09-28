@@ -1,0 +1,36 @@
+.contact-list {
+  display: flex;
+  margin-left: auto;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--secondary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--animation);
+  }
+
+  &__link--focused:hover,
+  &__link--focused:focus {
+    color: var(--acent-text-color);
+  }
+
+  &__link--focused:hover &__icon,
+  &__link--focused:focus &__icon {
+    fill: currentColor;
+  }
+
+  &__link.current {
+    color: var(--acent-text-color);
+  }
+
+  &__icon {
+    fill: var(--secondary-text-color);
+  }
+}
