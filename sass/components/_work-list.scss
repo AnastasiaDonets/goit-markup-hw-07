@@ -1,8 +1,7 @@
 .work {
-  display: flex;
+  @include flexCenter($type: flex, $main-axis: center);
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
 
   &__item {
     flex-basis: calc(100% - var(--work-indent) * var(--work-items) - 1) / var(--work-items);
@@ -58,19 +57,17 @@
   border-right: 1px solid var(--border-portfolio);
 
   &__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
-  color: var(--main-text-color);
-  margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+    margin-bottom: 4px;
   }
   &__text {
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
   }
 }
-
-

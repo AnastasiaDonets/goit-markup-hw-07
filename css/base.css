@@ -29,11 +29,6 @@ img {
   height: auto;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* Cancel list labels */
 .list {
   list-style: none;

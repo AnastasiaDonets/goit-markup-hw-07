@@ -27,8 +27,7 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @extend %section;
 }
 
 /* Cancel list labels */

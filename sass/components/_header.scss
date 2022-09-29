@@ -7,6 +7,5 @@
 }
 
 .header {
-  display: flex;
-  align-items: center;
+  @include flexCenter($type: flex, $cross-axis: center);
 }

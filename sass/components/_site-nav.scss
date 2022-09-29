@@ -1,8 +1,8 @@
 .header__nav {
-  display: flex;
+  @include flexCenter($type:flex);
 
   &__list {
-    display: flex;
+    @include flexCenter($type:flex);
   }
 
   &__item:not(:last-child) {
@@ -41,5 +41,9 @@
     &.current::after {
       opacity: 1;
     }
+  }
+
+  &__link.current {
+    color: var(--acent-text-color);
   }
 }
