@@ -1,8 +1,11 @@
 .header__nav {
-  @include flexCenter($type:flex);
+  @include flexCenter($type: flex);
 
   &__list {
-    @include flexCenter($type:flex);
+    display: none;
+    @media screen and (min-width: 768px) {
+      @include flexCenter($type: flex);
+    }
   }
 
   &__item:not(:last-child) {

@@ -6,9 +6,13 @@
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  margin-right: 93px;
+  margin-right: 88px;
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 88px;
+  }
 }
 
 .part__logo {

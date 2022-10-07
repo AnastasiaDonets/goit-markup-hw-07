@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <!-- Modern normalize -->
     <link
@@ -73,6 +73,17 @@
             >
           </li>
         </ul>
+
+        <button 
+          type="button" 
+          class="menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use href="./images/icons/icons.svg#open-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -480,10 +491,10 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      
         
         <!-- Клієнти -->
-        <div class="container">
+        <div class="container section">
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients__list list">
             <li class="clients__item">
@@ -572,7 +583,7 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> 
 
     <!--Контакта інформація-->
     <footer class="footer">
@@ -754,6 +765,41 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+     <button type="button" class="menu-toggle js-close-menu">
+      <svg class="menu-toggle_icon" width="40" height="40">
+        <use href="./images/icons/icons.svg#close-menu"></use>
+      </svg>
+     </button>
+
+     <ul class="mobile-list list">
+      <li class="mobile-list__item"><a href="./index.html" class="mobile-list__link link current" target="_self" rel="noopener noreferrer">Студія</a></li>
+      <li class="mobile-list__item"><a href="./portfolio.html" class="mobile-list__link link" target="_self" rel="noopener noreferrer">Портфоліо</a></li>
+      <li class="mobile-list__item"><a href="" class="mobile-list__link link" target="_self" rel="noopener noreferrer">Контакти</a></li>
+     </ul>
+
+     <ul class="mobile-contact list">
+      <li class="mobile-contact__item"><a href="tel:+380961111111" class="mobile-contact__link mobile-tel link">+38 096 111 11 11</a></li>
+      <li class="mobile-contact__item"><a href="mailto:info@devstudio.com" class="mobile-contact__link mobile-mail link">info@devstudio.com</a></li>
+     </ul>
+
+     <ul class="mobile-socials list">
+      <li class="mobile-socials__item"><a href="" class="mobile-socials__link link" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li class="mobile-socials__item"><a href="" class="mobile-socials__link link" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+      <li class="mobile-socials__item"><a href="" class="mobile-socials__link link" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+      <li class="mobile-socials__item"><a href="" class="mobile-socials__link link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+     </ul>
+    </div>
+
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,18 +1,38 @@
 .contact-list {
-  display: flex;
-  margin-left: auto;
+  display: none;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: auto;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+  }
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+    }
   }
 
   &__link {
-    @include flexCenter($type: flex, $cross-axis: center);
-    gap: 10px;
     color: var(--secondary-text-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
     transition: color var(--animation);
+
+    @media screen and (min-width: 1200px) {
+      @include flexCenter($type: flex, $cross-axis: center);
+      gap: 10px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 
   &__link--focused:hover,
