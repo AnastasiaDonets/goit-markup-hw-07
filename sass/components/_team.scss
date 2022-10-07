@@ -21,9 +21,15 @@
 }
 
 .team__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
   @media screen and (min-width: 768px) {
-    @include flexCenter($type: flex);
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 30px;
   }
 }

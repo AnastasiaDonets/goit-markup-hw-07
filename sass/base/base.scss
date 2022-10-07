@@ -1,12 +1,13 @@
 /* Body */
 .page {
+  width: 100%;
   font-family: var(--main-font);
   background-color: var(--main-background-color);
   color: var(--main-text-color);
 }
 
 .container {
-  width: 480px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
